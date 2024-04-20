@@ -185,6 +185,8 @@ public class sumStream {
     int sechigh = list16.stream().sorted(Collections.reverseOrder()).distinct().limit(2).skip(1).findFirst().get();
     System.out.println("secong highest number : " +sechigh);
     
+    
+    System.out.println("rishi");
 	}
 	}
 	
