@@ -40,7 +40,7 @@ public class sumStream {
 	//MULTIPLICATION OF NUMBER IN LIST
 	
 	List<Integer> list1 = Arrays.asList(1,2,3,4);
-	Optional<Integer>listmul = list.stream().reduce((x,y)->x*y);
+	Optional<Integer>listmul = list1.stream().reduce((x,y)->x*y);
 	System.out.println("multiplication of numbers in a list : "+listmul.get()); 
 	
 	
