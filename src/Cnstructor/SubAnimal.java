@@ -6,7 +6,7 @@ public class SubAnimal extends Animal {
 	
 	public SubAnimal() {
 		
-		super("bear");
+		super("bear",30);
 	}
 
 	public static void main(String[] args) {

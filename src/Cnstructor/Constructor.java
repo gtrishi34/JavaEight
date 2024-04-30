@@ -23,15 +23,21 @@ public String name;
 		this.name = name;
 	}
 	
+	public Constructor(int salary) {
+		this.salary=salary;
+	}
+	
 	public void show() {
 		System.out.println(+salary+" "+name);
 	}
 	public static void main(String[] args) {
 		
 		Constructor r = new Constructor();
+		Constructor s = new Constructor(2000);
 
 		Constructor e = new Constructor(2000,"raj");
 		r.show();
+		s.show();
 		e.show();
 		
 		}
