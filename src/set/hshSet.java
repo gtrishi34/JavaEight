@@ -1,5 +1,6 @@
 package set;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,6 +19,8 @@ public class hshSet {
 		System.out.println(age);
 		age.remove(25);
 		System.out.println(age);
+		
+		System.out.println(age.stream().max(Comparator.naturalOrder()).orElse(null));
 
 	}
 

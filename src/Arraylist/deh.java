@@ -1,7 +1,10 @@
 package Arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class deh {
 
@@ -10,7 +13,7 @@ public class deh {
 
 		List<Integer> age = new ArrayList<>();
 		
-		age.add(3);
+		age.add(31);
 		age.add(4);
 		age.add(6);
 		age.add(8);
@@ -23,6 +26,14 @@ public class deh {
 		for(int e : age) {
 			System.out.println(e);
 		}
+		
+		System.out.println(age.stream().max(Comparator.naturalOrder()).orElse(null));
+		
+		System.out.println(age.stream().sorted().collect(Collectors.toList()));
+		
+		 List<Integer>  ag = age.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
+		 
+		 System.out.println(ag);
 	}
 
 }
