@@ -1,5 +1,6 @@
 package set;
 
+import java.util.Comparator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -16,6 +17,9 @@ public class linkedHashSet {
 		lnkset.add(58);
 		
 		System.out.println(lnkset);
+		
+		System.out.println(lnkset.stream().max(Comparator.naturalOrder()).orElse(null));
+		
 		
 	}
 	
