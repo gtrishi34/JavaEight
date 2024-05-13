@@ -2,7 +2,12 @@ package generics;
 
 public class GenericsExample<T> {
 	
-	public static <T> void main(String[] args) {
+	 public GenericsExample(){
+		 
+		 
+	 }
+	
+	public static void main(String[] args) {
 		
 		
 	}
