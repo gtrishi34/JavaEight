@@ -3,6 +3,7 @@ package set;
 import java.util.Comparator;
 import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class linkedHashSet {
 
@@ -19,6 +20,10 @@ public class linkedHashSet {
 		System.out.println(lnkset);
 		
 		System.out.println(lnkset.stream().max(Comparator.naturalOrder()).orElse(null));
+		
+		System.out.println(lnkset.stream().sorted().collect(Collectors.toList()));
+		
+		System.out.println(lnkset.stream().sorted((a,b)->b-a).collect(Collectors.toList()));
 		
 		
 	}
