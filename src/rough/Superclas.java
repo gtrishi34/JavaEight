@@ -2,34 +2,24 @@ package rough;
 
 public class Superclas {
 	
-	    int x;
-
-	    Superclas(int x) {
-	        this.x = x;
-	    }
-	}
-
-	class Subclass extends Superclas {
-	    int y;
-
-	    Subclass(int x, int y) {
-	        super(x); // Calling superclass constructor
-	        this.y = y; // Initializing subclass-specific variable
-	    }
-
-	    void display() {
-	        System.out.println("x from superclass: " + super.x);
-	        System.out.println("y from subclass: " + this.y);
-	    }
 	
-	public static class mn{
-	    
+	
 	public static void main(String[] args) {
 		
-
-		 Subclass obj = new Subclass(10, 20);
-	        obj.display();
-	    }
+		int[] a = {1,2,3};
+		
+		int t = 5;
+		
+		for(int i = 0;i<a.length; i++){
+			for(int j = 1;j<a.length; j++){
+				
+				if(a[i]+a[j]== t) {
+					System.out.println(a[i]+" " +a[j]);
+				}
+				
+			}
+		}
+		
 	}
 	}
 
