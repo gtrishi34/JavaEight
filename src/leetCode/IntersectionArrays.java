@@ -4,7 +4,7 @@ package leetCode;
 	import java.util.Set;
 	import java.util.Arrays;
 
-	public class IntersectionSet {
+	public class IntersectionArrays {
 
 	    public static int[] intersection(int[] arr1, int[] arr2) {
 	        Set<Integer> set1 = new HashSet<>();
