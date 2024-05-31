@@ -29,12 +29,10 @@ public class Anargam {
 	        String str1 = "listen";
 	        String str2 = "silent";
 
-	        
-	        System.out.println(areAnagrams(str1, str2));
-//	        if (areAnagrams(str1, str2)) {
-//	            System.out.println(str1 + " and " + str2 + " are anagrams.");
-//	        } else {
-//	            System.out.println(str1 + " and " + str2 + " are not anagrams.");
-//	        }
+	        if (areAnagrams(str1, str2)) {
+	            System.out.println(str1 + " and " + str2 + " are anagrams.");
+	        } else {
+	            System.out.println(str1 + " and " + str2 + " are not anagrams.");
+	        }
 	    }
 	}
